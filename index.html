@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Elite Furniture | Premium Home Furniture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="#">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/00966550661689?text=Hello%20Elite%20Furniture!%20I'm%20interested%20in%20your%20products" 
+       class="whatsapp-float" 
+       target="_blank" 
+       id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat</span>
+    </a>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <marquee behavior="scroll" direction="left">
+                <span class="announcement-text">
+                    <i class="fas fa-truck"></i> Free Delivery & Setup | 
+                    <i class="fas fa-shield-alt"></i> 5-Year Warranty | 
+                    <i class="fas fa-phone"></i> +966 55 066 1689 |
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </span>
+            </marquee>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-brand">
+                <a href="#" class="logo">
+                    <i class="fas fa-couch"></i>
+                    <div class="logo-text">
+                        <span class="logo-main">Elite</span>
+                        <span class="logo-sub">Furniture</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">
+                        <i class="fas fa-store"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#collections" class="nav-link">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Collections</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-phone"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Cart Icon -->
+            <div class="nav-cart">
+                <a href="#" class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be loaded here -->
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price" id="cartTotal">SAR 0</span>
+            </div>
+            <a href="https://wa.me/00966550661689" class="btn btn-whatsapp btn-block checkout-btn" id="checkoutBtn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Checkout on WhatsApp
+            </a>
+            <button class="btn btn-outline btn-block continue-shopping" id="continueShopping">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Luxury Living Room">
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Premium Luxury Furniture</h1>
+                    <p class="slide-description">Transform your home with exquisite handcrafted furniture</p>
+                    <div class="slide-buttons">
+                        <a href="#products" class="btn btn-primary">
+                            <i class="fas fa-shopping-bag"></i> Shop Now
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Modern Bedroom">
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Modern Bedroom Sets</h1>
+                    <p class="slide-description">Experience comfort with premium bedroom furniture</p>
+                    <div class="slide-buttons">
+                        <a href="#products" class="btn btn-primary">
+                            <i class="fas fa-bed"></i> View Beds
+                        </a>
+                        <a href="https://wa.me/00966550661689" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Elegant Dining">
+                </div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Elegant Dining Collections</h1>
+                    <p class="slide-description">Create memories with stunning dining room furniture</p>
+                    <div class="slide-buttons">
+                        <a href="#products" class="btn btn-primary">
+                            <i class="fas fa-utensils"></i> Shop Dining
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-map-marker-alt"></i> Visit Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <button class="slider-prev" id="slidePrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+            <button class="slider-next" id="slideNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Free Delivery</h3>
+                    <p>Free delivery & setup</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>5-Year Warranty</h3>
+                    <p>Comprehensive warranty</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Easy Payment</h3>
+                    <p>Flexible payment options</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Via WhatsApp & Phone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Discover our premium furniture collection</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="living">Living</button>
+                <button class="filter-btn" data-category="bedroom">Bedroom</button>
+                <button class="filter-btn" data-category="dining">Dining</button>
+                <button class="filter-btn" data-category="office">Office</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections-section" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2>Special Collections</h2>
+                <p>Curated furniture sets for every space</p>
+            </div>
+
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Luxury Bedroom">
+                        <div class="collection-overlay">
+                            <h3>Luxury Bedrooms</h3>
+                            <p>Complete solutions</p>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3>Premium Bedroom Suite</h3>
+                        <p>From SAR 2,499</p>
+                        <button class="collection-link" data-collection="bedroom">
+                            View Collection <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Modern Living">
+                        <div class="collection-overlay">
+                            <h3>Modern Living</h3>
+                            <p>Sofa sets & units</p>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3>Living Room Collection</h3>
+                        <p>From SAR 1,899</p>
+                        <button class="collection-link" data-collection="living">
+                            View Collection <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Dining Sets">
+                        <div class="collection-overlay">
+                            <h3>Elegant Dining</h3>
+                            <p>Tables & chairs</p>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3>Dining Collection</h3>
+                        <p>From SAR 1,599</p>
+                        <button class="collection-link" data-collection="dining">
+                            View Collection <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Crafting Excellence Since 2010</h2>
+                    <p>At Elite Furniture, we combine traditional craftsmanship with modern design to create furniture that lasts.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Premium Materials</h4>
+                                <p>Finest wood and fabrics</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Expert Craftsmanship</h4>
+                                <p>Handcrafted by artisans</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Custom Designs</h4>
+                                <p>Tailored to your style</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Free Consultation</h4>
+                                <p>Professional advice</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/00966550661689?text=Hello!%20I'd%20like%20to%20schedule%20a%20consultation" 
+                       class="btn btn-primary" 
+                       target="_blank">
+                        <i class="fas fa-calendar"></i> Book Free Consultation
+                    </a>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Our Showroom">
+                    <div class="experience-badge">
+                        <span>14+</span>
+                        <p>Years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch for personalized service</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Showroom</h3>
+                            <p>Riyadh, Saudi Arabia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+966 55 066 1689</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@elitefurniture.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Hours</h3>
+                            <p>Sun-Thu: 9AM - 9PM</p>
+                        </div>
+                    </div>
+
+                    <div class="whatsapp-contact">
+                        <a href="https://wa.me/00966550661689" class="btn btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <p>Fast response within minutes</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Quick Inquiry</h3>
+                    <form id="inquiryForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="interest" required>
+                                <option value="">Interested In</option>
+                                <option value="living">Living Room</option>
+                                <option value="bedroom">Bedroom</option>
+                                <option value="dining">Dining</option>
+                                <option value="office">Office</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-couch"></i>
+                        <div>
+                            <h3>Elite Furniture</h3>
+                            <p>Premium Home Furniture</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        High-quality furniture with exceptional craftsmanship.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/00966550661689" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#collections"><i class="fas fa-chevron-right"></i> Collections</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="contact-info-footer">
+                        <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+                        <p><i class="fas fa-phone"></i> +966 55 066 1689</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp: +966 55 066 1689</p>
+                        <p><i class="fas fa-clock"></i> Sun-Thu: 9AM - 9PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elite Furniture. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
